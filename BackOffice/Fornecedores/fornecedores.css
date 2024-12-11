@@ -1,0 +1,40 @@
+body{
+    overflow: hidden !important;
+}
+
+.c1{
+    width: 75px;
+}
+.c2{
+    width: 375px;
+}
+.c3{
+    width: 100px;
+}
+.c4{
+    width: 100px;
+    justify-content: space-around;
+}
+
+.c1_Forn{
+    width: 50px;
+}
+.c2_Forn{
+    width: 250px;
+}
+.c3_Forn{
+    width: 100px;
+    justify-content: space-around;
+}
+
+.img_foto{
+    width: 75px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.tituloPagina{
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+}

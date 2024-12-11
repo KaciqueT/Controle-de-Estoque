@@ -1,0 +1,35 @@
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--azul-principal-);
+    color: white;
+    height: 40px;
+    top: 0px;
+    margin-top: 0px;
+}
+
+.topoHeader{
+    position: static;
+    top: 0px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cor{
+    background-color: darkred !important;
+}
+
+.logoconfig{
+    height: 75px;
+}

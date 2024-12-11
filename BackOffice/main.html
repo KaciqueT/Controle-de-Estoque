@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque - BackOficce</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    </style>
+</head>
+<body>
+
+    <div class="topoHeader">
+        <div id="topo" class="topo">
+            <div></div>
+            <img id="btnConfig" class="logoconfig" src="/Imagens/Logo3.png">
+            <div id="config" class="config">
+                <div class="TopoNome">
+                    <div id="id">ID</div>
+                    <div id="nome">Nome</div>
+                </div>
+                <!-- href="/BackOffice/index.html" target="fprincipal" -->
+                <div>
+                    <img id="btnConfig" class="btnConfig" src="/Imagens/configuraçoes.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="menuPrincipal" class="menuPrincipal ocultar">
+        <div class="menuitens">
+            <a href="./Colaboradores/colaboradores.html" target="fprincipal" class="btnMenuItem">Pessoas</a>
+            <a href="./Fornecedores/fornecedores.html" target="fprincipal" class="btnMenuItem">Fornecedores</a>
+            <a href="./Produtos/produtos.html" target="fprincipal" class="btnMenuItem">Produtos</a>
+            <a href="../Sobre/index.html" target="fprincipal" class="btnMenuItem">Sobre</a>
+            <a href="#" class="btnMenuItem cor" id="btnLogoff">Sair</a>
+        </div>
+        <div>
+                <img id="btnMenuPrincipal" class="btnMenuPrincipal" src="/Imagens/menu.svg">
+        </div>
+    </div>
+
+    <div id="principal" class="principal">
+        <iframe name="fprincipal" class="fprincipal"></iframe>
+    </div>
+        
+  
+    <script src="main.js" type="module"></script>
+    <script src="/script.js" type="module"></script>
+</body>
+</html>
