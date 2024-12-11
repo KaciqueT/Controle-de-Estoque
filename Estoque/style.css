@@ -1,0 +1,441 @@
+/***  Menu Lateral  ***/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+--azul-principal-:rgb(23, 23, 126);
+--fundo-janela-: #CCC;
+}
+
+body{
+    overflow: hidden;
+}
+
+.fprincipal{
+    height: 100vh;
+    width: 100%;
+    border: none;
+}
+
+.menuPrincipal{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 240px;
+    height: 100vh;
+    transition: all .2s;
+}
+
+.esconderElemento{
+    display: none !important;
+}
+
+.ocultar{
+    left: -195px !important; 
+    transition: all .2s;
+}
+
+.menuitens{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ccc;
+    height: 100vh;
+}
+
+.btnMenuPrincipal{
+    cursor: pointer;
+    width: 30px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.btnMenuItem{
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 15px;
+    width: 150px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+
+.inputFiltragem{
+    margin-top: 2px;
+}
+
+/*** FORMATAÇÂO HEADER ***/
+
+.config{
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+/*** FORMATAÇÂO TOPO ***/
+
+.topoJanela{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px 5px 10px;
+}
+
+.btn_topo{
+    background-color: var(--azul-principal-);
+    border-radius: 100px;
+    padding: 5px;
+    border: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.TopoNome{
+    padding-right: 5px;
+}
+
+/*** FORMATAÇÂO DE GRIDS ***/
+
+.areaGrid{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloGrid{
+    background-color: var(--azul-principal-);
+    color: white;
+    border-radius: 8px 8px 0px 0px;
+    padding: 3px 0px 3px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.colunaTituloGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dadosGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linhaGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linhaGrid:nth-child(even){
+    background-color: rgb(238, 238, 238);
+}
+.linhaGrid:nth-child(odd){
+    background-color: rgb(214, 214, 214);
+}
+.linhaGrid:hover{
+    background-color: rgb(1, 132, 155);
+    color: white;
+    padding: 4px;
+    padding: 0px !important;
+
+    .icone_op{
+        background-color: rgb(241, 255, 255);
+        padding: 5px;
+    }
+}
+
+.ocultarLinhaGrid{
+    display: none !important;
+}
+
+.colunaLinhaGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone_op{
+    cursor: pointer;
+}
+
+/*** FORMATAÇÂO NOVO POPUP ***/
+
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.janelaPopup{
+    width: 450px;
+}
+
+.tituloPopup{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    background-color: var(--azul-principal-);
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+}
+
+.btnJanelaFechar{
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnJanelaFechar:hover{
+    background-color: rgb(177, 0, 0);
+}
+
+.corpoPopup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--fundo-janela-);
+    padding: 5px;
+    width: 100%;
+}
+
+.rodapePopup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--azul-principal-);
+    border-radius: 0px 0px 5px 5px;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn_comandoPopup{
+    background-color: rgb(199, 91, 45);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.btn_comandoPopupMov{
+    background-color: rgb(0, 201, 124);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.campoForm{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.campoForm2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.campoForm input, .campoForm select {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.campoRadio{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: transparent !important;
+}
+
+.campoFiltragem{
+    width: 300px;
+}
+
+.inputFiltragem{
+    border: 3px solid gray !important;
+}
+
+.filtragem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campoForm div{
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+.ocultarPopup{
+    display: none !important;
+    /* opacity: 1 !important;
+    z-index: -1;*/
+}
+
+/*** FORMATAÇÂO TELEFONE ***/
+
+.telefones{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.tel{    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.numTel{  
+    background-color: #CCC !important;
+    width: 120px !important;
+    height: 30px;
+    padding: 5px;
+    border: 5px;
+    border-radius: 5px 0px 0px 5px !important;
+}
+
+.delTel{
+    background-color: #ff3838 !important;
+    color: white !important;
+    width: 24px !important;
+    height: 20px;
+    padding: 5px;
+    border: 5px;
+    border-radius: 0px 5px 5px 0px !important;
+    cursor: pointer;
+}
+
+/****** Caixa de Mensagem ******/
+.cxmsg_fundo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+}
+.cxmsg{
+    width: 300px;
+}
+.cxmsg_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    background-color: var(--azul-principal-);
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+}
+.cxmsg_corpo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--fundo-janela-);
+    padding: 20px 5px;
+
+}
+.cxmsg_rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0px 0px 10px 10px;
+}
+.btn_cxmsg{
+    background-color: rgb(244,103,44); 
+    color: rgb(255, 255, 255);
+    width: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    text-transform: uppercase;   
+}
+
+.btn_fechar{
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn_fechar:hover{
+    background-color: rgb(177, 0, 0);
+    border-radius: 5px;
+}
+
+/*** FORMATAÇÂO FORNECEDOR ***/

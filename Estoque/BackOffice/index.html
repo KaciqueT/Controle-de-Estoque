@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque - BackOficce</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    </style>
+</head>
+<body>
+
+    <div id="primeiroAcesso" class="popup ocultarPopup">
+        <div class="janelaPopup">
+            <input type="hidden" id="iddefsenha" value="-1">
+            <div class="tituloPopup">
+                <label>Cadastro de Senha</label>
+                <img src="/Imagens/fechar.svg" class="btnJanelaFechar" id="btnFecharSenha">
+            </div>
+
+            <div class="corpoPopup cadastro">
+                <div class="campoForm">
+                    <label>E-Mail:</label>
+                    <input type="email" name="f_email" id="f_emailcadastro" readonly>
+                </div>
+    
+                <div class="campoForm">
+                    <label>Senha:</label>
+                    <input type="password" name="f_senha1" id="f_senha1">
+                </div>
+                
+                <div class="campoForm">
+                    <label>Confirmar Senha:</label>
+                    <input type="password" name="f_senha2" id="f_senha2">
+                </div>
+            </div>
+
+            <div class="rodapePopup">
+                <button id="btnGravarSenha" class="btn_comandoPopupMov">Gravar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="login" class="login">
+        <div class="janelaPopup">
+            <div class="tituloPopup">
+                <label>Cadastro de Senha</label>
+            </div>
+
+            <div class="corpoPopup cadastro">
+                <div class="campoForm">
+                    <label>E-Mail:</label>
+                    <input type="email" name="f_emailLOGIN" id="f_email">
+                </div>
+    
+                <div class="campoForm">
+                    <label>Senha:</label>
+                    <input type="password" name="f_senhaLOGIN" id="f_senha">
+                </div>
+            </div>
+
+            <div class="rodapePopup">
+                <button id="btnLogin" class="btn_comandoPopupMov">Login</button>
+            </div>
+        </div>
+  
+    <script src="index.js" type="module"></script>
+    <script src="/script.js" type="module"></script>
+</body>
+</html>
