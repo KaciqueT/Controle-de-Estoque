@@ -524,7 +524,7 @@
         "type": "function",
         "z": "7d5d1de065a50659",
         "name": "function 16",
-        "func": "msg.payload = JSON.parse(msg.payload)\n\nconst n_id_usuario = msg.payload.n_id_pessoa\nconst s_nome_usuario = msg.payload.s_nome_pessoa\nconst n_id_tipousuario = msg.payload.n_id_tipopessoa\nconst c_status_usuario = msg.payload.c_status_pessoa\nconst s_foto_usuario = msg.payload.s_foto_pessoa\n\nmsg.n_id_pessoa = msg.payload.n_id_pessoa\nmsg.numtelefones = msg.payload.numtelefones\n\nmsg.topic = `UPDATE pessoa SET s_nome_pessoa = \"${s_nome_usuario}\", n_id_tipopessoa = ${n_id_tipousuario}, c_status_pessoa = \"${c_status_usuario}\", s_foto_pessoa = \"${s_foto_usuario}\" WHERE n_id_pessoa = ${n_id_usuario}`\n\nreturn msg;",
+        "func": "msg.payload = JSON.parse(msg.payload)\n\nconst n_id_usuario = msg.payload.n_id_pessoa\nconst s_nome_usuario = msg.payload.s_nome_pessoa\nconst s_email_pessoa = msg.payload.s_email_pessoa\nconst n_id_tipousuario = msg.payload.n_id_tipopessoa\nconst c_status_usuario = msg.payload.c_status_pessoa\nconst s_foto_usuario = msg.payload.s_foto_pessoa\n\nmsg.n_id_pessoa = msg.payload.n_id_pessoa\nmsg.numtelefones = msg.payload.numtelefones\n\nmsg.topic = `UPDATE pessoa SET s_nome_pessoa = \"${s_nome_usuario}\", n_id_tipopessoa = ${n_id_tipousuario}, s_email_pessoa = \"${s_email_pessoa}\", c_status_pessoa = \"${c_status_usuario}\", s_foto_pessoa = \"${s_foto_usuario}\" WHERE n_id_pessoa = ${n_id_usuario}`\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

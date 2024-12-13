@@ -273,7 +273,7 @@
         "type": "function",
         "z": "1e23c683649a9d26",
         "name": "function 53",
-        "func": "const n_id_token = msg.payload[0].n_id_token\nconst ts = new Date().getTime() + (60000 * 1)\n\nmsg.topic = `UPDATE token SET s_validade_token = ${ts} WHERE n_id_token = \"${n_id_token}\"`\n\nreturn msg;",
+        "func": "const n_id_token = msg.payload[0].n_id_token\nconst ts = new Date().getTime() + (300000 * 1)\n\nmsg.topic = `UPDATE token SET s_validade_token = ${ts} WHERE n_id_token = \"${n_id_token}\"`\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
