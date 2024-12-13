@@ -198,6 +198,7 @@ const pagina = () => {
             .then(res => {
                 btn_gravar.setAttribute("data-idcolab", id)
                 f_nome.value = res[0].s_nome_pessoa
+                f_email.value = res[0].s_email_pessoa
                 f_tipoColab.value = res[0].n_id_tipopessoa
                 f_status.value = res[0].c_status_pessoa
                 img_foto.src = res[0].s_foto_pessoa

@@ -260,7 +260,7 @@ const pagina = () => {
 
     btn_add.addEventListener("click", (evt) => {
         modoJanela = "n"
-        document.getElementById("tituloPopup").innerHTML="Novo Colaborador"
+        document.getElementById("tituloPopup").innerHTML="Novo Fornecedor"
         novoFornecedor.classList.remove("ocultarPopup") 
         campoForm2.classList.add("esconderElemento")
         f_nome.value = ""
@@ -308,7 +308,7 @@ const pagina = () => {
                 if(modoJanela == "n"){
                     const config = {
                         titulo: "Sucesso!",
-                        texto: "Novo colaborador gravado",
+                        texto: "Novo fornecedor gravado",
                         cor: "rgb(23, 23, 126)",
                         tipo: "ok",//sn ou ok
                         ok: () => {},
@@ -324,7 +324,7 @@ const pagina = () => {
                 }else{
                     const config = {
                         titulo: "Sucesso!",
-                        texto: "Colaborador editado com sucesso",
+                        texto: "Fornecedor editado com sucesso",
                         cor: "rgb(23, 23, 126)",
                         tipo: "ok",//sn ou ok
                         ok: () => {},
@@ -337,7 +337,7 @@ const pagina = () => {
             }else{
                 const config = {
                     titulo: "Erro!",
-                    texto: "Erro ao gravar novo colaborador",
+                    texto: "Erro ao gravar novo fornecedor",
                     cor: "rgb(139, 0, 0)",
                     tipo: "ok",//sn ou ok
                     ok: () => {},
